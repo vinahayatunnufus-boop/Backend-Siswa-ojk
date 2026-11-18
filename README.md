@@ -1,29 +1,40 @@
 # Backend Data Siswa
 
-API backend untuk mengelola data siswa menggunakan Express dan MySQL.
+Aplikasi pengelolaan data siswa dengan frontend Vite, API Express, dan database MySQL.
 
 **Terakhir diperbarui: 18 November 2026**
 
+## Persiapan
+
+Pastikan Node.js dan MySQL tersedia. Buat file `Backend/.env`:
+
+```env
+DB_HOST=localhost
+DB_USER=your_mysql_user
+DB_PASSWORD=your_mysql_password
+DB_NAME=your_database_name
+DB_PORT=3306
+PORT=3000
+```
+
+Ganti nilai contoh dengan konfigurasi MySQL lokal. Jangan unggah file `.env`.
+
 ## Menjalankan aplikasi
 
-1. Pastikan Node.js dan MySQL sudah tersedia.
-2. Buat file `Backend/.env` dengan konfigurasi database:
+Jalankan API di terminal pertama:
 
-   ```env
-   DB_HOST=localhost
-   DB_USER=your_mysql_user
-   DB_PASSWORD=your_mysql_password
-   DB_NAME=your_database_name
-   DB_PORT=3306
-   PORT=3000
-   ```
+```bash
+cd Backend
+npm install
+npm start
+```
 
-3. Pasang dependensi dan jalankan server:
+Jalankan frontend di terminal kedua:
 
-   ```bash
-   cd Backend
-   npm install
-   npm start
-   ```
+```bash
+cd Frontend
+npm install
+npm run dev
+```
 
-Server berjalan di `http://localhost:3000` (atau port yang ditentukan melalui `PORT`).
+Buka `http://localhost:5173`. API berjalan di `http://localhost:3000`.
